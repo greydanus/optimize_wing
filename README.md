@@ -7,4 +7,5 @@ Sam Greydanus
 
 In this project, I use Navier-Stokes to simulate a wind tunnel, place a rectangular occlusion in it, and use gradient descent to optimize its lift/drag ratio. This gives us a wing shape. I'm releasing this repo as a supplement to a series of blog posts I wrote about human flight. Also note that this code was originally modified from [this Autograd demo](bit.ly/2Yy8LXs).
 
-![optimized_wing.png](static/wing.png)
+![setup.png](static/setup.png)
+![wing.png](static/wing.png)
