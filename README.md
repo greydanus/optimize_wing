@@ -9,6 +9,6 @@ In this project, I use Navier-Stokes to simulate a wind tunnel, place a rectangu
 
 ## Before and after optimization
 
-![setup.png](static/setup.png) ![wing.png](static/wing.png)
+![optimize_wing.png](optimize_wing.png)
 
 Note: the code and ideas in this repo build on [this Autograd demo](https://github.com/HIPS/autograd/blob/master/examples/fluidsim/wing.png).

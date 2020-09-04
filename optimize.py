@@ -10,7 +10,7 @@ import scipy
 import scipy.ndimage
 import matplotlib.pyplot as plt
 
-from .simulate import simulate_wind_tunnel, constrain_occlusion
+from simulate import simulate_wind_tunnel, constrain_occlusion
 
 
 class ObjectView(object):  # make a dictionary look like an object
