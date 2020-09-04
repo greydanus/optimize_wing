@@ -11,4 +11,4 @@ In this project, I use Navier-Stokes to simulate a wind tunnel, place a rectangu
 
 ![setup.png](static/setup.png) ![wing.png](static/wing.png)
 
-Note: this project builds on the code and ideas in [this Autograd demo](https://github.com/HIPS/autograd/blob/master/examples/fluidsim/wing.png).
+Note: the code and ideas in this repo build on [this Autograd demo](https://github.com/HIPS/autograd/blob/master/examples/fluidsim/wing.png).
