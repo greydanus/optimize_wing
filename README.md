@@ -12,6 +12,8 @@ Note: the code and ideas in this repo build on [this Autograd demo](https://gith
 
 ### Appendix: Fun failure cases
 
-* When making the wing region longer in the hopes of getting a wider wing, I got a surprising result: [two wings](https://drive.google.com/file/d/1rwnlMd6etLoWvdqvyOeOcQY5cERk7YmS/view?usp=sharing).
-* I got [an even wackier result](https://drive.google.com/file/d/1aq-Cxvg4xwH7MOD4VJ57bUNimwx41L_2/view?usp=sharing) while playing around with the granularity of the simulation.
-* An example of [bad local minima](https://drive.google.com/file/d/1hBEOMML5QKRj-M0dE1Fiz0Y829loHzo8/view?usp=sharing) due to making the initial wing region too impermeable to the air.
+* [Biplane wing](https://drive.google.com/file/d/1rwnlMd6etLoWvdqvyOeOcQY5cERk7YmS/view?usp=sharing): when making the differentiable region wider (in hopes of a wider wing) the wing split into two wings, like a biplane.
+
+* [Broken wing](https://drive.google.com/file/d/1aq-Cxvg4xwH7MOD4VJ57bUNimwx41L_2/view?usp=sharing): When adjusting the granularity of the simulation, we accidentally made the wing shatter into many little wings. Fun to look at, but probably not so fun to fly with.
+
+* [Stubby wing](https://drive.google.com/file/d/1rwnlMd6etLoWvdqvyOeOcQY5cERk7YmS/view?usp=sharing): This sad little wing occurred after making the initial rectangle too impermeable (not enough flow was entering the middle of the rectangle, so we hit a bad local minima)
