@@ -13,14 +13,14 @@ Note: the code and ideas in this repo build on [this Autograd demo](https://gith
 
 ### Appendix: Fun failure cases
 
-Biplane wing: when making the differentiable region wider (in hopes of a wider wing) the wing split into two wings, like a biplane.
+**Biplane wing.** When making the differentiable region wider (in hopes of a wider wing) the wing split into two wings, like a biplane.
 
 ![biplane.gif](./static/biplane.gif)
 
-* Shattered wing: When adjusting the granularity of the simulation, we accidentally made the wing shatter into many little wings. Fun to look at, but probably not so fun to fly with.
+**Shattered wing.** When adjusting the granularity of the simulation, we accidentally made the wing shatter into many little wings. Fun to look at, but probably not so fun to fly with.
 
 ![shatter.gif](./static/shatter.gif)
 
-* Stubby wing: This sad little wing occurred after making the initial rectangle too impermeable (not enough flow was entering the middle of the rectangle, so we hit a bad local minima)
+**Stubby wing.** This sad little wing occurred after making the initial rectangle too impermeable (not enough flow was entering the middle of the rectangle, so we hit a bad local minima)
 
 ![stubby.gif](./static/stubby.gif)
