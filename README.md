@@ -10,12 +10,17 @@ To obtain the figure below: clone this repo, `cd` into it, and run `python main.
 
 Note: the code and ideas in this repo build on [this Autograd demo](https://github.com/HIPS/autograd/blob/master/examples/fluidsim/wing.png).
 
+
 ### Appendix: Fun failure cases
 
-* Biplane wing: when making the differentiable region wider (in hopes of a wider wing) the wing split into two wings, like a biplane.
+Biplane wing: when making the differentiable region wider (in hopes of a wider wing) the wing split into two wings, like a biplane.
+
 ![biplane.gif](./static/biplane.gif)
 
+* Shattered wing: When adjusting the granularity of the simulation, we accidentally made the wing shatter into many little wings. Fun to look at, but probably not so fun to fly with.
 
-* [Broken wing](https://drive.google.com/file/d/1aq-Cxvg4xwH7MOD4VJ57bUNimwx41L_2/view?usp=sharing): When adjusting the granularity of the simulation, we accidentally made the wing shatter into many little wings. Fun to look at, but probably not so fun to fly with.
+![shatter.gif](./static/shatter.gif)
 
-* [Stubby wing](https://drive.google.com/file/d/1rwnlMd6etLoWvdqvyOeOcQY5cERk7YmS/view?usp=sharing): This sad little wing occurred after making the initial rectangle too impermeable (not enough flow was entering the middle of the rectangle, so we hit a bad local minima)
+* Stubby wing: This sad little wing occurred after making the initial rectangle too impermeable (not enough flow was entering the middle of the rectangle, so we hit a bad local minima)
+
+![stubby.gif](./static/stubby.gif)
