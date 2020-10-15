@@ -11,7 +11,7 @@ To obtain the figure below: clone this repo, `cd` into it, and run `python main.
 Note: the code and ideas in this repo build on [this Autograd demo](https://github.com/HIPS/autograd/blob/master/examples/fluidsim/wing.png).
 
 
-### Appendix: Fun failure cases
+## Appendix: Fun failure cases
 
 **Biplane wing.** When making the differentiable region wider (in hopes of a wider wing) the wing split into two wings, like a biplane.
 
@@ -21,6 +21,6 @@ Note: the code and ideas in this repo build on [this Autograd demo](https://gith
 
 ![shatter.gif](./static/shatter.gif)
 
-**Stubby wing.** This sad little wing occurred after making the initial rectangle too impermeable (not enough flow was entering the middle of the rectangle, so we hit a bad local minima)
+**Stubby wing.** This sad little wing occurred after making the initial rectangle too impermeable. Not enough simulated air was making it past the boundary layer of the rectangle so we hit a bad local minima.
 
 ![stubby.gif](./static/stubby.gif)
