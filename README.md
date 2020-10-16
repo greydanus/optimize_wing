@@ -11,7 +11,7 @@ To obtain the figure below: clone this repo, `cd` into it, and run `python main.
 Note: the code and ideas in this repo build on [this Autograd demo](https://github.com/HIPS/autograd/blob/master/examples/fluidsim/wing.png).
 
 
-## Appendix: Fun failure cases
+## Appendix: Failure cases
 
 **Biplane wing.** When making the differentiable region wider (in hopes of a wider wing) the wing split into two wings, like a biplane.
 
