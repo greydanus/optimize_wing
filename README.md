@@ -1,6 +1,6 @@
 # Optimizing a Wing
 
-[Blog post](https://greydanus.github.io/2020/10/14/optimizing-a-wing/) | [Paper](https://bit.ly/3j3Wcu4) | [Colab notebook](https://colab.research.google.com/drive/1RTsSyr7B3THKVGp_44Oyh7rxBriOHzJ7)
+[Blog post](https://greydanus.github.io/2020/10/14/optimizing-a-wing/) | [Paper](https://bit.ly/3j3Wcu4) | [Colab notebook](https://bit.ly/2H5r401)
 
 In this project, I use Navier-Stokes to simulate a wind tunnel, place a rectangular occlusion in it, and use gradient descent to optimize its lift/drag ratio. This gives us a wing shape. I'm releasing this repo as a supplement to a series of blog posts I wrote about human flight.
 
